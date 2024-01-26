@@ -1,0 +1,40 @@
+# Terraform related ignores
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
+!example_override.tf
+*.plan
+*.tfstate.d/
+
+# Ignore override files as they are usually used for local customizations
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfvars files, which are likely to contain sentitive data, such as
+# password, private keys, and other secrets. These should not be part of version control
+*.tfvars
+*.tfvars.json
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Kubernetes related ignores
+*.yaml
+*.yml
+
+# Ignore specific Kubernetes manifest files that may be sensitive or local
+# You can list specific files here
+
+# General files to ignore
+*.log
+*.bak
+*.tmp
+*.swp
+node_modules/

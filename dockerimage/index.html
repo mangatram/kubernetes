@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to nginx!</title>
+    <style>
+        body {
+            width: 35em;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello from Nginx!</h1>
+    <p>Container Name: <span id="container-name"></span></p>
+    <p>Container IP: <span id="container-ip"></span></p>
+
+    <script>
+        document.getElementById('container-name').textContent = window.location.hostname;
+        // Fetching IP address in client-side JavaScript in a static site is not straightforward
+        document.getElementById('container-ip').textContent = 'Unavailable';
+    </script>
+</body>
+</html>

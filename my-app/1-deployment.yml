@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: mradockeront/nginxprivate:v0.1.4
+        image: mradockeront/nginxprivate:v0.1.5
         resources:
           limits:
             memory: "128Mi"

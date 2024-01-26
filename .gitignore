@@ -25,9 +25,7 @@ override.tf.json
 # Ignore Visual Studio Code files
 .vscode/
 
-# Kubernetes related ignores
-*.yaml
-*.yml
+
 
 # Ignore specific Kubernetes manifest files that may be sensitive or local
 # You can list specific files here

@@ -18,12 +18,12 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: mradockeront/nginx:v0.1.3
+        image: mradockeront/nginxprivate:v0.1.2
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
         - containerPort: 80
-      # imagePullSecrets:
-      # - name: docker-read
+      imagePullSecrets:
+      - name: docker-read
